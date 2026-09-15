@@ -1,0 +1,41 @@
+styles.css
+body {
+    background-color: #e6f2ff;
+    color: #333333;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #336699;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+}
+
+main img {
+    display: block;
+    margin-bottom: 15px;
+}
+
+aside {
+    background-color: #d9ecff;
+    padding: 20px;
+}
+
+footer {
+    background-color: #336699;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

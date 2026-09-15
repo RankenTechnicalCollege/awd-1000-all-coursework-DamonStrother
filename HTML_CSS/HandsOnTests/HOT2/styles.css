@@ -1,0 +1,61 @@
+/* CSS Reset for specific elements */
+body, header, nav, main, footer {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+body {
+  background-color: #F4F4F4; /* Light gray background color for the body */
+  font-family: "Times New Roman", Times, cursive;
+}
+/* ============================= */
+/*         Header Styles         */
+/* ============================= */
+header{
+      background-color: #151E3D; /* Dark blue background color for the header */
+      width: fit-content;
+      padding: 20px;
+      border-radius: 10px;
+      box-sizing: border-box;
+      }
+
+
+.content {
+  background-color: #FBFCFA; /* White background color for the content area */
+  padding: 20px; /* Add padding around the content */
+}
+
+nav a {
+  color: #FFFFFF; /* White text color for navigation links */
+  text-decoration: none; /* Remove underline from links */
+}
+/* ============================= */
+/*     Main Content Styles       */
+/* ============================= */
+main section[id="hero"] {
+  background-image: url('images/superhero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 463px;
+  width: 260px;
+  padding: 20px;
+}
+
+.text {
+  color: #ffffff;
+}
+
+.tagline {
+  font-style: italic;
+}
+
+/* ============================= */
+/*        Footer Styles          */
+/* ============================= */
+
+footer {
+  background-color: #151E3D;
+  text-align: center;
+  color: #FFFFFF;
+}
