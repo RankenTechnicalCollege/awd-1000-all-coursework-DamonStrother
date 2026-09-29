@@ -1,0 +1,85 @@
+/*
+Author: Damon Strother
+Date: 09/22/2026
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#css1, #css2, #css3 {
+    width: 30%;
+    float: left;
+    padding: 0 1%;
+}
+
+/* Style rules for the body content */
+body {
+    padding: 2%;
+    background-color: #d1d1e0;
+}
+
+/* Style rules for the header content */
+header h1 {
+    align-content: center;
+    font-size: 3em;
+    font-family: Georgia, Times, serif;
+    padding: 3%;
+    color: #47476b;
+}
+
+/* Style rules for the nav content */
+nav {
+    background-color: #47476b;
+    text-decoration: none;
+}
+
+nav ul {
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav li a { display: block; color: #e3eaf8; padding: 0.5em 2em;
+}
+
+/* Styles rules for the main content */
+ main {
+    overflow: auto;
+    padding: 2%;
+    font-family: Geneva, Arial, sans-serif;
+ }
+ 
+ main a {
+    color: #47476b;
+     text-decoration: none;
+     font-weight: bold;
+     font-style: italic;
+ }
+
+main p {
+    font-size: 1.25em;
+}
+
+main h3 {
+    padding-top: 2%;
+    font-size: 2em;
+}
+/* Style rules for the footer content */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    color: #47476b;
+    padding: 1% 0;
+    border-top: 3px solid #47476b;
+    float: left;
+}

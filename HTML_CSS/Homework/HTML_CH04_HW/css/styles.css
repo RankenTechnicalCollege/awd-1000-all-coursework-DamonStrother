@@ -1,0 +1,139 @@
+body {
+    background: linear-gradient(
+        to right,
+        #e6f7ff,
+        #ffffff
+    );
+    font: normal 16px 'Arial', sans-serif;
+    margin: 0;
+}
+
+#wrapper {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(
+        135deg,
+        #003366,
+        #006699
+    );
+
+    color: white;
+    padding: 30px;
+    text-align: center;
+    text-shadow: 3px 3px 4px #000000;
+    margin-bottom: 20px;
+}
+
+h1,h2,h3 {
+    font-family: Georgia, serif;
+}
+
+h1,h2 {
+    border: 10px dashed #336699;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+nav {
+    background-color: #222222;
+    padding: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #00ffff;
+    background-color: #444444;
+}
+
+nav a:focus {
+    color: #ffff00;
+    outline: 3px solid #ffffff;
+}
+
+main {
+    background-color: rgb(245, 250, 255);
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.content > h2 {
+    background-color: rgba(0, 102, 153, 0.15);
+    padding: 15px;
+}
+
+.content p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 20px 0;
+    padding: 15px; 
+    width: 90%;
+    min-height: 60px;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
+.highlight {
+    color: #cc0000;
+    font-weight: bold;
+    background-color: rgba(255, 255, 0, 0.5);
+    padding: 3px;
+}
+
+.cascade-demo {
+    color: green;
+    background-color: #eeeeee;
+    padding: 20px;
+}
+
+footer {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+@media screen and (min-width: 768px) {
+
+    #wrapper {
+        width: 85%;
+        margin: 40px auto;
+        padding: 40px;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    nav a {
+        padding: 15px 30px;
+    }
+    .content p {
+        width: 80%;
+        min-height: 80px;
+        margin: 25px auto;
+        padding: 20px;
+    }
+    main {
+        padding: 40px;
+    }
+
+}
