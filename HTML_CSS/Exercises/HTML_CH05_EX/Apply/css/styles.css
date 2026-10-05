@@ -1,4 +1,4 @@
-/* Style sheet created by: Student's First Name Student's Last Name, Today's Date */
+/* Style sheet created by: Damon Strother, 10/5/2026, Chp 5, apply */
 
 /* CSS Reset */
 body, header, nav, main, footer, h1, div, img, ul {
@@ -9,24 +9,20 @@ body, header, nav, main, footer, h1, div, img, ul {
 
 /* Style rule for body and images */
 body {
-	background-color: #e4f1f6;
-    max-width: 100%;
-    display: block;
+    background-color: #e4f1f6;
 }
 
-   
-/* Style rules for mobile viewport*/
+/* Style rules for mobile viewport */
 
-/* Style rule to hide tablet-desk class*/
-.tablet-desk {
+/* Style rule to hide tablet-desktop class */
+.tablet-desktop {
     display: none;
 }
 
-
 /* Style rule for header */
 header {
-	font-family: Verdana, Arial, sans-serif;
-	text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    text-align: center;
     padding: 3%;
     color: #092834;
     margin-top: 5%;
@@ -34,16 +30,12 @@ header {
 
 /* Style rules for nav */
 nav {
-	padding: 1%;
+    padding: 1%;
     margin-bottom: 1%;
     background-color: #67afcb;
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
-}
-
-selector {
-  top: 0;
 }
 
 nav ul {
@@ -57,7 +49,7 @@ nav li {
     font-size: 1.5em;
     padding: 4%;
     display: inline-block;
-    font-family: B612, san-serif;
+    font-family: B612, sans-serif;
 }
 
 nav li a {
@@ -66,13 +58,13 @@ nav li a {
     text-decoration: none;
 }
 
-/* Style rules for main content  */
+/* Style rules for main content */
 main {
-	display: block;
-	margin: 1% 1% 15%;
-	padding: 1%;
+    display: block;
+    margin: 1% 1% 15%;
+    padding: 1%;
     font-size: 1.5em;
-    font-family: Crimson Text, sans-serif;
+    font-family: "Crimson Text", sans-serif;
 }
 
 .corner {
@@ -85,7 +77,7 @@ main {
 
 /* Style rule for footer */
 footer {
-	font-size: .70em;
-	text-align: center;
-	margin-top: 2em;
+    font-size: .70em;
+    text-align: center;
+    margin-top: 2em;
 }

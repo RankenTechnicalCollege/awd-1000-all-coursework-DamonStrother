@@ -1,7 +1,7 @@
 /*
-Author:
-Date:
-File Name: 
+Author: Damon Strother 
+Date:10/3/2026
+File Name: Chp 6, apply
 */
 
 /* CSS Reset */
@@ -44,4 +44,32 @@ footer {
 	font-size: .70em;
 	text-align: center;
     color: #341509;
+}
+
+
+/* Media Query for tablet Viewport */
+@media screen and (min-width: 481px), print {
+    article {
+        width: 43%;
+        float: left;
+        height: 160px;
+    }
+
+    footer {
+        float: left;
+    }
+
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 900px) {
+    article {
+        width: 27%;
+        height: 140px;
+    }
+
+    article:hover {
+        color: #a22c02;
+    }
+
 }
