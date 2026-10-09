@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- Damon Strother, 10/5/2026 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Ranken Student Activities</title>
+</head>
+<body>
+
+  <header>
+    <h1>Ranken Student Activities</h1>
+
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="register.html">Register</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+  <main>
+
+  </main>
+
+  <section>
+      <h2>Upcoming Events</h2>
+
+      <table>
+          <caption>October Student Events</caption>
+
+          <thead>
+              <!-- Row 1 -->
+              <tr>
+                  <th>Event</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Location</th>
+              </tr>
+          </thead>
+
+          <tbody>
+              <!-- Row 2 -->
+              <tr>
+                  <th>Game Night</th>
+                  <td>October 8</td>
+                  <td>6:00 PM</td>
+                  <td>Student Center</td>
+              </tr>
+
+              <!-- Row 3 -->
+              <tr>
+                  <th>Coding Challenge</th>
+                  <td>October 15</td>
+                  <td>4:00 PM</td>
+                  <td>Room 204</td>
+              </tr>
+
+              <!-- Row 4 -->
+              <tr>
+                  <th>Fall Cookout</th>
+                  <td>October 22</td>
+                  <td>5:30 PM</td>
+                  <td>Courtyard</td>
+              </tr>
+
+              <!-- Row 5 -->
+              <tr>
+                  <th>Halloween Party</th>
+                  <td>October 29</td>
+                  <td>7:00 PM</td>
+                  <td>Student Center</td>
+              </tr>
+
+          </tbody>
+      </table>
+
+      <section>
+        <h2>Event Registration</h2>
+        <p> Students can use the school form to register for the upcoming event.
+          Complete the form and submit it to reserve your spot.
+        </p>
+
+        <form>
+          <fieldset>
+              <legend>Personal Information</legend>
+
+              <label for="fname">First Name:</label>
+              <input type="text" id="fname" name="fname">
+
+              <label for="lname">Last Name:</label>
+              <input type="text" id="lname" name="lname">
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email">
+
+              <button type="submit">Register</button>
+          </fieldset>
+        </form>
+        <form>
+          <fieldset>
+            <legend>Event Registration</legend>
+
+            <!-- Event Selection -->
+            <label for="event">Select an Event:</label>
+            <select id="event" name="event">
+              <option value="">Select an event</option>
+              <option value="game-night">Game Night</option>
+              <option value="coding-challenge">Coding Challenge</option>
+              <option value="fall-cookout">Fall Cookout</option>
+              <option value="halloween-party">Halloween Party</option>
+            </select>
+
+          <!-- Student Type -->
+          <p>Student Type:</p>
+
+            <label><input type="radio" id="Full-time" name="student-type" value="full-time">Full time</label>
+
+
+           <label><input type="radio" id="Part-time" name="student-type" value="part-time">Part time</label>
+
+          <!-- Interests -->
+          <p>Interests:</p>
+
+            <input type="checkbox" id="gaming" name="interest-gaming" value="gaming">
+            <label for="gaming">Gaming</label>
+
+            <input type="checkbox" id="coding" name="interest-coding" value="coding">
+            <label for="coding">Coding</label>
+
+            <input type="checkbox" id="sports" name="interest-sports" value="sports">
+            <label for="sports">Sports</label>
+
+            <input type="checkbox" id="community-events" name="interest-community-events" value="community-events">
+            <label for="community-events">Community Events</label>
+
+          <!-- Comments -->
+          <label for="comments">Comments or Questions:</label>
+          <textarea id="comments" name="comments" rows="5" cols="40"></textarea>
+
+          <!-- Submit Button -->
+          <button type="submit">Register</button>
+      </fieldset>
+    </form>
+
+  </section>
+
+</section>
+
+  <footer>
+    <p>Completed by: Damon Strother</p>
+  </footer>
+
+</body>
+</html>

@@ -27,3 +27,28 @@ footer {
 	font-size: .70em;
 	text-align: center;
 }
+
+/* Style rule for the table */
+table {
+	width: 80%;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid #71881b;
+}
+
+table, tr, th, td {
+    border-collapse: collapse;
+    padding: 2%;
+}
+
+caption {
+	font-size: 2em;
+	padding: 2%;
+	margin-top: 2%;
+}
+
+th, td {
+	border: 1px solid #7188bb;
+}
