@@ -1,7 +1,7 @@
 /*
-Author:
-Date:
-File Name: 
+Author: Damon Strother
+Date: 10/9/2026
+File Name: Chp 8, apply
 */
 
 /* CSS Reset */
@@ -28,27 +28,37 @@ footer {
 	text-align: center;
 }
 
-/* Style rule for the table */
+/* Set the table width, margins, and border. */
 table {
-	width: 80%;
-	margin-top: 0;
-	margin-bottom: 0;
-	margin-left: auto;
-	margin-right: auto;
-	border: 3px solid #71881b;
+    width: 80%;
+    margin: 0 auto;
+    border: 3px solid #71881b;
 }
 
+/* Collapse borders and add padding. */
 table, tr, th, td {
     border-collapse: collapse;
     padding: 2%;
 }
 
+/* Style the table caption. */
 caption {
-	font-size: 2em;
-	padding: 2%;
-	margin-top: 2%;
+    font-size: 2em;
+    padding: 2%;
+    margin-top: 2%;
 }
 
+/* Add borders to table headers and cells. */
 th, td {
-	border: 1px solid #7188bb;
+    border: 1px solid #7188bb;
+}
+
+/* Center text inside table cells. */
+td {
+    text-align: center;
+}
+
+/* Set the background color for odd rows. */
+tr:nth-child(odd) {
+    background-color: #d3e788;
 }
