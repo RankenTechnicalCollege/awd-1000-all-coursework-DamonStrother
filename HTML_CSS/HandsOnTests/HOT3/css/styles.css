@@ -1,0 +1,229 @@
+/*
+Author: Damon Strother
+Date: 10/5/2026
+File Name: HOT 3
+*/
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #f0f7f2;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ID selector */
+#container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styling */
+header {
+    background-color: #DC143C;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #9c0e2b;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+}
+
+/* Navigation hover effect */
+nav a:hover {
+    background-color: #edd4d4;
+    color: #9c0e2b;
+    border-radius: 5px;
+}
+
+/* Main content */
+main {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+h1, h2, h3 {
+    color: #DC143C;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+table, tr, th, td {
+    border: 1px solid #333333;
+    padding: 2%;
+}
+
+th {
+    background-color: #DC143C;
+    color: white;
+    text-align: left;
+}
+
+/* Alternating table row colors */
+tbody tr:nth-child(even) {
+    background-color: #e5f2e8;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Form styling */
+form {
+    background-color: #f7fbf8;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #b8d4c0;
+    border-radius: 8px;
+}
+
+fieldset {
+    border: 1px solid #b8d4c0;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: #DC143C;
+    font-weight: bold;
+    padding: 5px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Consistent text, email, select, and textarea appearance */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: white;
+    color: #333333;
+}
+
+/* Textarea sizing */
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Radio buttons and checkboxes */
+input[type="radio"]
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Submit button */
+input[type="submit"],
+button {
+    background-color: #DC143C;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+input[type="submit"]:hover,
+button:hover {
+    background-color: #DC143C;
+}
+
+/* Footer styling */
+footer {
+    background-color: #DC143C;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Table Styles */
+
+/* Table and cell borders */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Table rows and cells */
+table, tr, th, td {
+    border: 1px solid #333333;
+    padding: 2%;
+}
+
+/* Styled table header */
+th {
+    background-color: #DC143C;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Alternating row colors */
+tbody tr:nth-child(even) {
+    background-color: #f2e5e5;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
