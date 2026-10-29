@@ -9,4 +9,6 @@
 
       Filename: js02.js
  */
+      function setupform() {
+            document
 

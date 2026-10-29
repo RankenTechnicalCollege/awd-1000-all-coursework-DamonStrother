@@ -1,0 +1,41 @@
+/* 
+Student: Damon Strother 
+Date: 10/20/26
+File Name: Chp 8, lab 2
+
+/* Mobile Viewport: Style rules for table */
+
+/* Style the table with width, margins, and an outer border */
+table {
+    width: 80%;
+    margin: 0 auto;
+    border: 3px solid #71881b;
+}
+
+/* Collapse table borders and set padding for table elements */
+table, tr, th, td {
+    border-collapse: collapse;
+    padding: 2%;
+}
+
+/* Style the table caption */
+caption {
+    font-size: 2em;
+    padding: 2%;
+    margin-top: 2%;
+}
+
+/* Set borders for table header and data cells */
+th, td {
+    border: 1px solid #7188bb;
+}
+
+/* Center-align text in table data cells */
+td {
+    text-align: center;
+}
+
+/* Set the background color for odd-numbered table rows */
+tr:nth-child(odd) {
+    background-color: #d3e788;
+}

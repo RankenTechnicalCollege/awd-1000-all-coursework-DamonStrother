@@ -1,0 +1,42 @@
+/* Damon Strother */
+/* OBSCURA — custom black, graphite, and silver theme. Bootstrap 5 handles responsive layout. */
+:root {
+    --obscura-black: #08090b;
+    --obscura-graphite: #16181b;
+    --obscura-gray: #555b64;
+    --obscura-silver: #c5c9ce;
+    --obscura-light-silver: #e5e7eb;
+}
+body { margin: 0; background: var(--obscura-light-silver); color: var(--obscura-graphite); font-family: Arial, Helvetica, sans-serif; line-height: 1.6; }
+.navbar { background: var(--obscura-black); padding: 1rem 0; }
+.brand-name { color: #f5f6f7; font-size: 1.5rem; font-weight: 700; letter-spacing: .2rem; }
+.nav-link { color: var(--obscura-silver); margin-left: .5rem; }
+.nav-link:hover, .nav-link:focus, .nav-link.active { color: #fff; text-decoration: underline; text-underline-offset: .4rem; }
+.navbar-toggler { border-color: var(--obscura-silver); }
+.navbar-toggler:focus-visible, a:focus-visible, .btn:focus-visible { outline: 3px solid var(--obscura-silver); outline-offset: 3px; box-shadow: none; }
+/* Bootstrap 5 jumbotron-style hero sections */
+.obscura-jumbotron { background-position: center; background-size: cover; position: relative; isolation: isolate; }
+.obscura-jumbotron::before { content: ""; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(8,9,11,.88), rgba(22,24,27,.62)); z-index: -1; }
+.home-jumbotron { background-image: url("https://images.unsplash.com/photo-1593029927096-1ba50b83ab01?auto=format&fit=crop&w=1800&q=85"); }
+.sale-jumbotron { background-image: url("https://images.unsplash.com/photo-1592878897400-43fb1f1cc324?auto=format&fit=crop&w=1800&q=85"); }
+.team-jumbotron { background-image: url("https://images.unsplash.com/photo-1521485714898-f097eb6fc5b9?auto=format&fit=crop&w=1800&q=85"); }
+.jumbotron-heading, .jumbotron-copy { text-shadow: 2px 3px 8px rgba(0,0,0,.95); }
+.jumbotron .eyebrow { color: var(--obscura-silver); text-shadow: 1px 2px 5px #000; }
+.btn-light { color: var(--obscura-black); background: #d5d9df; border-color: #d5d9df; }
+.btn-light:hover, .btn-light:focus { color: var(--obscura-black); background: #f5f6f7; border-color: #f5f6f7; }
+.btn-outline-dark:hover { background: var(--obscura-black); }
+.eyebrow { font-size: .75rem; font-weight: 700; letter-spacing: .16rem; color: #686e77; }
+.section-heading { font-weight: 700; font-size: clamp(1.8rem, 3vw, 2.5rem); }
+.value-card { height: 100%; padding: 1.5rem; background: #f5f6f7; border: 1px solid #d1d5db; border-top: 3px solid #858b94; box-shadow: 0 8px 24px rgba(8,9,11,.06); }
+.value-card h3 { font-size: 1.3rem; font-weight: 700; }
+.intro-text { max-width: 42rem; color: var(--obscura-gray); }
+.product-card, .team-card { background: #f5f6f7; border: 1px solid #d1d5db; border-radius: 0; box-shadow: 0 8px 24px rgba(8,9,11,.07); transition: transform 180ms ease, box-shadow 180ms ease; }
+.product-card:hover, .team-card:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(8,9,11,.13); }
+.product-image { height: 20rem; object-fit: cover; object-position: center; }
+.team-image { height: 19rem; object-fit: cover; object-position: center 35%; }
+.card-title { font-size: 1.15rem; font-weight: 700; }
+.card-text { color: #454a52; }
+.site-footer { background: var(--obscura-black); color: #fff; }
+::selection { color: var(--obscura-black); background: var(--obscura-silver); }
+@media (max-width: 575.98px) { .jumbotron { padding: 2.5rem 1rem !important; } .product-image { height: 24rem; } .team-image { height: 22rem; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; } }

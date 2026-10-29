@@ -1,0 +1,206 @@
+/*
+    Author: Damon Strother
+    Date: 10/14/26
+    File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, h2, h3, p,
+ul, li, figure, figcaption, aside, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Apply border-box sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Body and images */
+body {
+    background: linear-gradient(#f8f3e9, #b8a18a);
+    color: #2a1f14;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Main container */
+#container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f8f3e9;
+}
+
+/* Header */
+header {
+    min-height: 150px;
+    background-color: #e7d9c5;
+    background-image: url("../images/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 2%;
+}
+
+header h1 {
+    color: #1e1a14;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav {
+    background-color: #2a1f14;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: block;
+}
+
+nav li a {
+    display: block;
+    padding: 0.6em;
+    color: #f8f3e9;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+/* Main content */
+main {
+    padding: 2%;
+}
+
+/* Rounded images */
+.round {
+    border-radius: 8px;
+}
+
+/* Introduction */
+aside {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px #c5a687;
+    padding: 2%;
+}
+
+/* Animal figures */
+figure {
+    border: 4px solid #2a1f14;
+    box-shadow: 6px 6px 10px #c5a687;
+    max-width: 400px;
+    width: 100%;
+    margin: 2% auto;
+    background-color: #f8f3e9;
+}
+
+/* Animal photos */
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+/* Animal captions */
+figcaption {
+    padding: 2%;
+    border-top: 4px solid #2a1f14;
+    font-size: 0.95em;
+    line-height: 1.2;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    padding: 2%;
+}
+
+/* Tablet Viewport */
+@media screen and (min-width: 481px) {
+
+    nav li {
+        display: inline-block;
+    }
+
+    nav li a {
+        padding: 0.5em 1em;
+    }
+
+    /* Two-column grid */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    aside {
+        grid-column: 1 / span 2;
+    }
+
+    figure {
+        max-width: none;
+        margin: 0;
+    }
+
+    figcaption {
+        font-size: 0.8em;
+    }
+}
+
+/* Desktop Viewport */
+@media screen and (min-width: 769px) {
+
+    nav li a:hover {
+        opacity: 0.5;
+    }
+
+    /* Three-column grid */
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+
+    aside {
+        grid-column: 1 / span 3;
+        font-size: 2em;
+    }
+
+    #container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        box-shadow: 6px 6px 10px #8c7965;
+    }
+}
+
+/* Large Desktop Viewport */
+@media screen and (min-width: 1441px) {
+
+    /* Four-column grid */
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    aside {
+        grid-column: 1 / span 4;
+        font-size: 3em;
+    }
+
+    #container {
+        width: 80%;
+        max-width: 1600px;
+    }
+}

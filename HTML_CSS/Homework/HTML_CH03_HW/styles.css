@@ -1,0 +1,86 @@
+/*
+    Author: Damon Strother
+    Date: 08/31/2026
+    File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, main, aside, footer, h1, h2, p, ul, ol, blockquote {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Body Style Rules */
+body {
+    background-color: #e6f2ff;
+    color: #183440;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* Wrapper Style Rules */
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Style Rules */
+header {
+    background-color: #183440;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header a {
+    color: #ffffff;
+}
+
+/* Main Style Rules */
+main {
+    background-color: #ffffff;
+    padding: 25px;
+}
+
+main h2 {
+    margin: 20px 0 10px;
+}
+
+main p {
+    margin: 15px 0;
+}
+
+main img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+}
+
+/* List Style Rules */
+ul, ol {
+    margin: 10px 0 20px 30px;
+}
+
+/* Aside Style Rules */
+aside {
+    background-color: #c8dbe3;
+    padding: 25px;
+}
+
+aside h2 {
+    margin-bottom: 10px;
+}
+
+/* Footer Style Rules */
+footer {
+    background-color: #183440;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}

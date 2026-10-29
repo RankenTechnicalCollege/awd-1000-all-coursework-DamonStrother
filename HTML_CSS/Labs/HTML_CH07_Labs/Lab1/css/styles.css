@@ -1,0 +1,229 @@
+/*
+    Author: Damon Strother
+    Date: 10/14/26
+    File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img, ul,
+figure, figcaption, aside {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Apply border-box sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Style rules for body and images */
+body {
+    background-color: #e5e0fa;
+    font-family: Verdana, Arial, sans-serif;
+    color: #373684;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Style rule for container */
+#container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Style rules for header */
+header {
+    text-align: center;
+    padding: 1%;
+}
+
+header h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+/* Style rules for navigation */
+nav {
+    background-color: #373684;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: block;
+    border-top: 1px solid #e5e0fa;
+}
+
+nav li a {
+    display: block;
+    padding: 0.5em;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85em;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+}
+
+.grid {
+    display: block;
+}
+
+/* Style rules for introduction */
+aside {
+    text-align: center;
+    padding: 2%;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 3px 3px 10px #8280cb;
+}
+
+/* Style rules for instructor figures */
+figure {
+    position: relative;
+    width: 80%;
+    max-width: 275px;
+    margin: 2% auto;
+    border: 5px solid #373684;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 8px #888888;
+    overflow: hidden;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+/* Style rules for figure captions */
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5% 2%;
+    background-color: rgba(55, 54, 132, 0.75);
+    color: #ffffff;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Style rules for footer */
+footer {
+    text-align: center;
+    font-size: 0.75em;
+    padding: 2%;
+    clear: both;
+}
+
+footer a {
+    color: #373684;
+    text-decoration: none;
+}
+
+/* Tablet Viewport */
+@media screen and (min-width: 481px) {
+
+    /* Tablet navigation */
+    nav li {
+        display: inline-block;
+        border-top: none;
+    }
+
+    nav li a {
+        padding: 0.5em 0.7em;
+    }
+
+    /* Tablet grid layout */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2%;
+        align-items: start;
+    }
+
+    /* Introduction spans both columns */
+    aside {
+        grid-column: 1 / span 2;
+        font-size: 1em;
+        padding: 2%;
+    }
+
+    /* Instructor figures */
+    figure {
+        width: 80%;
+        margin: 2% auto;
+    }
+
+    figcaption {
+        font-size: 0.8em;
+    }
+
+}
+
+/* Desktop Viewport */
+@media screen and (min-width: 769px) {
+
+    /* Desktop container */
+    #container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: #e5e0fa;
+        box-shadow: 3px 3px 10px #888888;
+    }
+
+    /* Desktop navigation */
+    nav {
+        text-align: center;
+    }
+
+    nav li a {
+        padding: 0.6em 1em;
+        font-size: 0.75em;
+    }
+
+    nav li a:hover,
+    nav li a:focus {
+        background-color: #e5e0fa;
+        color: #373684;
+    }
+
+    /* Four-column desktop grid */
+    .grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 2%;
+    }
+
+    /* Introduction spans all four columns */
+    aside {
+        grid-column: 1 / span 4;
+        font-size: 0.85em;
+        padding: 2%;
+    }
+
+    /* Instructor cards */
+    figure {
+        width: 100%;
+        max-width: none;
+        margin: 0 auto;
+    }
+
+    figcaption {
+        font-size: 0.65em;
+        padding: 5% 1%;
+    }
+
+}

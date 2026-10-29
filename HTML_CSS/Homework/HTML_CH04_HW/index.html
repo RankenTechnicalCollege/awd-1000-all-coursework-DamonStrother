@@ -1,94 +1,69 @@
 <!DOCTYPE html>
+<!-- Damon Strother, 10/23/2026 -->
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>My CSS Demonstration Page</title>
-
-    <link rel="stylesheet" href="normalize.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Hobby: Photography</title>
     <link rel="stylesheet" href="styles.css">
-
-    <style>
-        .cascade-demo {
-            color: blue;
-            background-color: lightyellow;
-        }
-    </style>
 </head>
 
 <body>
 
-    <div id="wrapper">
+    <header>
+        <h1>My Favorite Hobby: Photography</h1>
+        <p>Capturing memories, one picture at a time!</p>
+    </header>
 
-        <!-- Header -->
-        <header>
-            <h1>My CSS Demonstration Page</h1>
-            <p>Learning HTML and CSS</p>
-        </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#equipment">Equipment</a>
+        <a href="#benefits">Benefits</a>
+    </nav>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-
-        <main>
-
-            <section class="content">
-
-                <h2>About This Page</h2>
-
-                <p>
-                    This paragraph is a block-level element. It demonstrates
-                    different CSS properties such as width, height, margin,
-                    padding, color, and font styling.
-                </p>
-
-                <p>
-                    This page was created to demonstrate several HTML and CSS
-                    concepts, including selectors, measurements, colors,
-                    gradients, borders, and the CSS cascade.
-                </p>
-
-                <h2>CSS Cascade Demonstration</h2>
-
-                     <p class="cascade-demo">
-                    This paragraph demonstrates the CSS cascade.
-                    The inline style overrides the embedded and external CSS.
-                </p>
-
-                <h2>Inline Element</h2>
-
-                <p>
-                    This is an
-                    <span class="highlight">inline element</span>
-                    inside a paragraph.
-                </p>
-
-                <h2>More Information</h2>
-
-                <p>
-                    CSS makes it possible to control the appearance and
-                    layout of a webpage. Selectors allow us to target
-                    specific HTML elements.
-                </p>
-
-            </section>
-
-        </main>
-
-        <footer>
+    <main>
+        <section id="about">
+            <h2>About My Hobby</h2>
             <p>
-                Damon Strother, September 28, 2026
+                Photography is my favorite hobby because it allows me to
+                capture special moments and see the world from different
+                perspectives. I enjoy taking pictures of nature, landscapes,
+                animals, and everyday life.
             </p>
-        </footer>
+        </section>
 
-    </div>
+        <section id="equipment">
+            <h2>My Photography Equipment</h2>
+            <p>Some of the equipment I use includes:</p>
+
+            <ul>
+                <li>A digital camera or smartphone</li>
+                <li>A tripod for steady pictures</li>
+                <li>A camera bag to protect my equipment</li>
+                <li>Photo editing software</li>
+            </ul>
+        </section>
+
+        <section id="benefits">
+            <h2>Why I Enjoy Photography</h2>
+            <p>
+                Photography helps me express my creativity, relax, and
+                appreciate the beauty of the world around me. It also allows
+                me to save memories that I can look back on in the future.
+            </p>
+        </section>
+
+        <p class="learn-more">
+            Learn more about photography at
+            <a href="https://www.nationalgeographic.com/photography">
+                National Geographic Photography
+            </a>.
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Damon Strother | My Favorite Hobby</p>
+    </footer>
 
 </body>
 </html>

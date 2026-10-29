@@ -1,0 +1,82 @@
+/*
+Author: Damon Strother
+Date: 10/13/2026
+File Name: Chp 8, analyze
+*/
+
+/* Style for body specifies a background color */
+body {
+    background: linear-gradient(to top right, #fff 0%, #6699ff 100%) no-repeat fixed center;
+    font-family: Geneva, Arial, sans-serif;
+}
+
+/* Style for the container element */
+#container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Style rules for form elements */
+fieldset, input {
+    margin-bottom: 2%;
+}
+
+/* Style for each fieldset */
+fieldset {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+
+/* Style for the fieldset legend */
+fieldset legend {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+/* Style for labels */
+label {
+    display: block;
+}
+
+/* Style for the submit button */
+.btn {
+    border: none;
+    margin: 0 auto;
+    display: block;
+    padding: 5%;
+    background-color: #003399;
+    font-size: 1.25em;
+    border-radius: 10px;
+    color: #fff;
+}
+
+/* Style for the footer element */
+footer {
+    font-size: .9em;
+    text-align: center;
+}
+
+/* Media query for tablet layout */
+@media only screen and (min-width: 600px) {
+
+    /* Style rule for the form */
+    form {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* Style rule for the grid class */
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    /* Style rule for the submit button in tablet layout */
+    .btn {
+        grid-column: 1 / span 2;
+        padding: 3%;
+    }
+
+}

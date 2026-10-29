@@ -1,0 +1,119 @@
+/*
+    Author: Damon Strother
+    Date: 10/19/2026
+    File Name: apply10.css
+*/
+
+/* CSS Reset */
+body,
+header,
+main,
+footer,
+h1,
+h2,
+p,
+div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body */
+body {
+    background-color: #f4d8ce;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style rules for header */
+header {
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.8em;
+}
+
+/* Style rules for main */
+main {
+    margin: 10px 2%;
+    padding: 20px;
+    background-color: #fff;
+    border: 4px double #5a4141;
+}
+
+main h2 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/* Style rules for square */
+.square {
+    width: 125px;
+    height: 125px;
+    background-color: #c1849e;
+    margin-left: 6%;
+    -webkit-animation-name: move;
+    animation-name: move;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+}
+
+/* CSS animation */
+@-webkit-keyframes move {
+    from {
+        margin-left: 6%;
+    }
+
+    to {
+        margin-left: 30%;
+    }
+}
+
+@keyframes move {
+    from {
+        margin-left: 6%;
+    }
+
+    to {
+        margin-left: 30%;
+    }
+}
+
+/* Move the square when hovered over */
+.square:hover {
+    -webkit-transform: translate(80px);
+    transform: translate(80px);
+}
+
+/* JavaScript demonstration */
+main section:nth-of-type(2) {
+    margin-top: 28px;
+}
+
+main section:nth-of-type(2) p {
+    margin: 18px 0 10px;
+    font-size: 0.7em;
+}
+
+/* Button style */
+button {
+    padding: 7px 4px;
+    font-size: 0.7em;
+    cursor: pointer;
+}
+
+/* New paragraph style */
+#new {
+    color: #c0145f;
+    font-size: 1.4em;
+    margin-top: 18px;
+}
+
+/* Footer style */
+footer {
+    text-align: center;
+    padding: 10px;
+}

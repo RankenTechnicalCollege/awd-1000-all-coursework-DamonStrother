@@ -8,8 +8,8 @@
 
       Tinley Xeriscapes
       Plants web page
-      Author: 
-      Date:   
+      Author: Damon Strother
+      Date: 10/20/26
 
       Filename: js01.html
    -->
@@ -40,7 +40,7 @@
             <li><a href="#">Get An Estimate</a></li>
          </ul>
       </nav>
-        
+
       <aside>
          <ul>
             <li id="blanket">Blanket Flower</li>
@@ -48,15 +48,30 @@
             <li id="bluestem">Little Bluestem</li>
          </ul>
       </aside>
-    
-      <article>   
+
+      <article>
          <figure>
-            <img src="#" alt="" title="" id="plantImg" />         
-            <figcaption id="imgCaption">            
+            <img src="#" alt="" title="" id="plantImg">
+            <figcaption id="imgCaption">
+               <script>
+                  /*
+                     Information on available plants
+                     including link to USDA website
+                  */
+                  document.write("<p>Plant Choices for ");
+                  document.write("<a href='http://planthardiness.ars.usda.gov'>")
+                  document.write("hardiness zones</a");
+                  document.write(" 5a - 6b </p>") // hardiness zones for Chicago and surrounding areas //
+
+                  //define variables containing plant file names
+                  let blank = "blanket.jpg";
+                  let bluestem = "bluestem.jpg";
+                  let rugosa = "rugosa.jpg";
+               </script>
             </figcaption>
-         </figure>       
+         </figure>
       </article>
-    
+
       <footer>
          <p>Tinley Xeriscapes &bull; Tinley Park, IL 60477</p>
       </footer>
