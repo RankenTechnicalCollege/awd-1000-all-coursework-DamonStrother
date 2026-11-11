@@ -1,43 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .tagline {
+      font-style: italic;
+    }
+  </style>
   <title>HOT 2</title>
 </head>
 
 <body>
 
-    <header>
-        <h1>Moonlight Kitchen</h1>
-        <nav>
-            <ul>
-              <li><a href="home.html">Home</a></li>
-              <li><a href="menu.html">Menu</a></li>
-              <li><a href="contactus.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Moonlight Kitchen</h1>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#menu-preview">Menu</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main>
+
     <section id="hero">
-      <img src="images/superhero.jpg" alt="Superhero">
-      <h2>MoonlightKitchen</h2>
-      <p>Where Flavor Meets the Night!</p>
-      <section id="about">
-        <p>Moonlight Kitchen is a cozy and welcoming restaurant serving delicious food made with fresh ingredients. With its relaxing
-          atmosphere and friendly service, it's a great place to enjoy a meal with family and friends.
-        </p>
-      </section>
+      <img src="images/superhero.jpg" alt="Restaurant food">
+      <h2>Moonlight Kitchen</h2>
+      <p class="tagline">Where Flavor Meets the Night!</p>
     </section>
+
+    <section id="about">
+      <h3>About Us</h3>
+
+      <img src="images/interior.jpg" alt="Restaurant interior">
+
+      <p>
+        Moonlight Kitchen is a cozy and welcoming restaurant serving delicious
+        food made with fresh ingredients. With its relaxing atmosphere and
+        friendly service, it's a great place to enjoy a meal with family and friends.
+      </p>
+
+      <p>
+        Visit our <a href="https://www.example.com">restaurant website</a>.
+      </p>
+    </section>
+
+    <div class="clear"></div>
+
+    <section id="menu-preview">
+      <h3>Our Specialties</h3>
+
+      <div class="menu-item">
+        <h4>Grilled Chicken</h4>
+        <p>Grilled chicken served with fresh vegetables.</p>
+        <p>Price: <span>$18.99</span></p>
+      </div>
+
+      <div class="menu-item">
+        <h4>Classic Burger</h4>
+        <p>Beef burger with cheese, lettuce, and tomato.</p>
+        <p>Price: <span>$15.99</span></p>
+      </div>
+
+      <div class="menu-item">
+        <h4>Garden Pasta</h4>
+        <p>Pasta served with fresh vegetables.</p>
+        <p>Price: <span>$16.99</span></p>
+      </div>
+    </section>
+
+    <section id="location">
+      <h3>Our Location</h3>
+
+      <iframe src="https://www.google.com/maps?q=St.+Louis,+MO&output=embed" width="100" height="300"
+        title="Restaurant location">
+      </iframe>
+    </section>
+
+    <section id="contact">
+      <h3>Contact Us</h3>
+
+      <p>Address:
+        <a href="geo:38.6270,-90.1994">123 Main Street, St. Louis, MO</a>
+      </p>
+
+      <p>Phone:
+        <a href="tel:3145550123">3145550123</a>
+      </p>
+    </section>
+
   </main>
 
-
   <footer>
-    <p>&copy; 2025 Moonlight Kitchen. All rights reserved.</p>
+    <p>&copy; 2026 Moonlight Kitchen. All rights reserved.</p>
   </footer>
 
-
 </body>
+
 </html>

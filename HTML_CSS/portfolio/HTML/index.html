@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<!--
+    Name: Damon Strother
+    File: index.html
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Damon Strother | Software Development Portfolio</title>
+    <meta name="description"
+        content="Damon Strother's software development portfolio, coursework, skills, and projects.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#home">
+                    <img src="images/logo.svg" alt="DS logo" class="logo">
+                    DAMON STROTHER
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#coursework">Coursework</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Home / Introduction -->
+        <section class="hero" id="home">
+            <div class="container hero-container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7 hero-text">
+                        <p class="eyebrow">SOFTWARE DEVELOPMENT STUDENT</p>
+                        <h1>Hello, I'm <span>Damon Strother.</span></h1>
+                        <h2>I am learning to build <span id="typing-text">web experiences.</span></h2>
+                        <p class="hero-description">
+                            I am developing my skills in web design and software development through hands-on
+                            coursework, personal projects, and continuous learning.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#portfolio" class="btn btn-light">View My Work</a>
+                            <a href="#contact" class="btn btn-outline-light">Contact Me</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 text-center">
+                        <!-- Replace this logo with a professional photo if you want to use one. -->
+                        <div class="profile-frame">
+                            <img src="images/logo.svg" alt="Damon Strother personal DS logo" class="profile-logo">
+                        </div>
+                        <p class="profile-caption">Learning. Building. Improving.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me -->
+        <section class="section" id="about">
+            <div class="container reveal">
+                <p class="eyebrow">GET TO KNOW ME</p>
+                <h2 class="section-title">About Me</h2>
+
+                <div class="about-content">
+                    <p>
+                        I am a Software Development student at Ranken Technical College, where I began my studies
+                        in August 2026. I am working toward my expected graduation in 2028 and building a strong
+                        foundation in programming, web development, and problem-solving.
+                    </p>
+                    <p>
+                        My current learning includes HTML, CSS, JavaScript, C#, and Bootstrap. I enjoy creating
+                        responsive websites, improving page layouts, and finding solutions when code does not
+                        work as expected.
+                    </p>
+                    <p>
+                        I am looking for an internship or part-time opportunity where I can gain practical
+                        experience, contribute to a team, and continue expanding my technical knowledge.
+                        I am open to learning new languages, tools, and technologies as I grow as a developer.
+                    </p>
+                </div>
+
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <span class="highlight-number">2026</span>
+                        <span>Started at Ranken</span>
+                    </div>
+                    <div class="highlight-card">
+                        <span class="highlight-number">2028</span>
+                        <span>Expected Graduation</span>
+                    </div>
+                    <div class="highlight-card">
+                        <span class="highlight-number">5+</span>
+                        <span>Technologies Learning</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section section-alt" id="skills">
+            <div class="container reveal">
+                <p class="eyebrow">WHAT I'M LEARNING</p>
+                <h2 class="section-title">Technical Skills</h2>
+
+                <div class="skills-list">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>C#</span>
+                    <span>Bootstrap</span>
+                    <span>Responsive Web Design</span>
+                    <span>Visual Studio Code</span>
+                    <span>Git & GitHub</span>
+                    <span>Chrome DevTools</span>
+                </div>
+                <p class="skills-note">
+                    These skills reflect my current learning and coursework. I am continuing to practice and
+                    develop each skill through projects.
+                </p>
+            </div>
+        </section>
+
+        <!-- Resume -->
+        <section class="section" id="resume">
+            <div class="container reveal">
+                <p class="eyebrow">EDUCATION & EXPERIENCE</p>
+                <h2 class="section-title">Resume</h2>
+
+                <div class="resume-card">
+                    <div class="resume-item">
+                        <p class="resume-date">AUGUST 2026 – EXPECTED 2028</p>
+                        <h3>Ranken Technical College</h3>
+                        <h4>Software Development Student</h4>
+                        <p>
+                            Studying software development with a focus on programming fundamentals, web
+                            technologies, responsive design, and practical project development.
+                        </p>
+                    </div>
+
+                    <div class="resume-item">
+                        <p class="resume-date">TECHNICAL PROJECT EXPERIENCE</p>
+                        <h3>Coursework & Personal Projects</h3>
+                        <h4>Web Development Practice</h4>
+                        <p>
+                            Created responsive websites using HTML5, CSS3, JavaScript, and Bootstrap.
+                            Practiced page structure, navigation, forms, styling, accessibility basics,
+                            and debugging.
+                        </p>
+                    </div>
+
+                    <div class="resume-item">
+                        <p class="resume-date">CAREER OBJECTIVE</p>
+                        <h3>Internship or Part-Time Opportunity</h3>
+                        <p>
+                            Seeking an opportunity to apply classroom knowledge, gain real-world experience,
+                            learn from experienced developers, and continue building technical skills.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Use your browser's Print option to save this resume section as a PDF. -->
+                <button class="btn btn-light mt-4" type="button" onclick="window.print()">Print / Save Resume</button>
+            </div>
+        </section>
+
+        <!-- Coursework -->
+        <section class="section section-alt" id="coursework">
+            <div class="container reveal">
+                <p class="eyebrow">WHAT I'VE BEEN STUDYING</p>
+                <h2 class="section-title">Coursework</h2>
+                <p class="section-intro">
+                    My coursework gives me opportunities to practice the development process, apply new
+                    concepts, and build projects that demonstrate my progress.
+                </p>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <article class="course-card">
+                            <h3>HTML & CSS</h3>
+                            <p>
+                                Practiced semantic HTML, CSS layouts, responsive design, navigation,
+                                forms, tables, images, and visual styling.
+                            </p>
+                            <p class="technology">HTML5 · CSS3 · Responsive Design</p>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="course-card">
+                            <h3>JavaScript</h3>
+                            <p>
+                                Learning how to use JavaScript to add interaction, respond to user actions,
+                                and make web pages more dynamic.
+                            </p>
+                            <p class="technology">JavaScript · DOM · Events</p>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="course-card">
+                            <h3>Bootstrap</h3>
+                            <p>
+                                Practiced using Bootstrap components and responsive grid layouts to create
+                                pages that adapt to different screen sizes.
+                            </p>
+                            <p class="technology">Bootstrap · HTML · CSS</p>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="course-card">
+                            <h3>C#</h3>
+                            <p>
+                                Building programming knowledge in C#, including the fundamentals needed
+                                to create and understand software applications.
+                            </p>
+                            <p class="technology">C# · Programming Fundamentals</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Projects -->
+        <section class="section" id="portfolio">
+            <div class="container reveal">
+                <p class="eyebrow">SELECTED WORK</p>
+                <h2 class="section-title">Portfolio Projects</h2>
+                <p class="section-intro">
+                    These projects represent my web development coursework and the skills I am continuing
+                    to build. Replace the preview images and placeholder links with your final project
+                    screenshots and GitHub repositories.
+                </p>
+
+                <div class="row g-4">
+
+                    <!-- Project 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <article class="project-card">
+                            <img src="images/restaurant-preview.svg" alt="Restaurant website project preview">
+                            <div class="project-content">
+                                <p class="project-type">COURSEWORK PROJECT</p>
+                                <h3>Restaurant Website</h3>
+                                <p>
+                                    A restaurant landing page created to practice organizing business
+                                    information, creating navigation, and presenting content in a clean layout.
+                                </p>
+                                <p><strong>Technologies:</strong> HTML5, CSS3</p>
+                                <p><strong>Challenge:</strong> Keeping the page simple while making the
+                                    content easy to scan.</p>
+                                <p><strong>Solution:</strong> Organized the page into clear sections and
+                                    used consistent spacing, typography, and colors.</p>
+                                <div class="project-links">
+                                    <!-- Replace # with your live project URL and repository URL. -->
+                                    <a href="#" target="_blank" rel="noopener">Live Demo</a>
+                                    <a href="#" target="_blank" rel="noopener">GitHub</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <article class="project-card">
+                            <img src="images/wild-rescues-preview.svg" alt="Wild Rescues website project preview">
+                            <div class="project-content">
+                                <p class="project-type">COURSEWORK PROJECT</p>
+                                <h3>Wild Rescues</h3>
+                                <p>
+                                    A wildlife rescue website designed to share information about rescue,
+                                    rehabilitation, and release efforts.
+                                </p>
+                                <p><strong>Technologies:</strong> HTML5, CSS3</p>
+                                <p><strong>Challenge:</strong> Presenting several types of information
+                                    while keeping the site readable on mobile devices.</p>
+                                <p><strong>Solution:</strong> Used responsive layouts, clear navigation,
+                                    images, and organized content sections.</p>
+                                <div class="project-links">
+                                    <!-- Replace # with your live project URL and repository URL. -->
+                                    <a href="#" target="_blank" rel="noopener">Live Demo</a>
+                                    <a href="#" target="_blank" rel="noopener">GitHub</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <article class="project-card">
+                            <img src="images/strike-a-chord-preview.svg" alt="Strike A Chord website project preview">
+                            <div class="project-content">
+                                <p class="project-type">COURSEWORK PROJECT</p>
+                                <h3>Strike A Chord</h3>
+                                <p>
+                                    A music-themed website created to organize lesson, instructor, rental,
+                                    and contact information.
+                                </p>
+                                <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript</p>
+                                <p><strong>Challenge:</strong> Making multiple pages feel consistent
+                                    and easy to navigate.</p>
+                                <p><strong>Solution:</strong> Reused a consistent header, navigation,
+                                    page structure, and stylesheet.</p>
+                                <div class="project-links">
+                                    <!-- Replace # with your live project URL and repository URL. -->
+                                    <a href="#" target="_blank" rel="noopener">Live Demo</a>
+                                    <a href="#" target="_blank" rel="noopener">GitHub</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Links -->
+        <section class="section section-alt" id="connect">
+            <div class="container reveal text-center">
+                <p class="eyebrow">LET'S CONNECT</p>
+                <h2 class="section-title">Professional Profiles</h2>
+                <p class="section-intro">
+                    Connect with me and view my code as I continue learning and building projects.
+                </p>
+                <div class="social-links">
+                    <!-- Replace these placeholder URLs with your actual profiles. -->
+                    <a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://www.linkedin.com/in/YOUR-PROFILE/" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section" id="contact">
+            <div class="container reveal">
+                <p class="eyebrow">GET IN TOUCH</p>
+                <h2 class="section-title">Contact</h2>
+                <p class="section-intro">
+                    I am interested in internship and part-time opportunities where I can learn,
+                    contribute, and grow as a developer.
+                </p>
+
+                <div class="contact-card">
+                    <h3>Send Me a Message</h3>
+                    <p>
+                        This form area is ready for your Jotform embed. Create a form in Jotform,
+                        set its notifications to email you, and replace the placeholder below.
+                    </p>
+
+                    <!-- Replace YOUR_JOTFORM_FORM_ID after creating your Jotform form. -->
+                    <div class="jotform-placeholder">
+                        <p><strong>Jotform setup needed:</strong> Replace the form ID in this section
+                            with your real Jotform form ID.</p>
+                        <a href="https://www.jotform.com/" target="_blank" rel="noopener">Create a Jotform account</a>
+                    </div>
+
+                    <!-- Add your Jotform iframe here after creating your form. -->
+                    <!-- Example:
+                    <iframe class="jotform-frame" src="https://form.jotform.com/YOUR_JOTFORM_FORM_ID"
+                        title="Contact form" loading="lazy"></iframe>
+                    -->
+
+                    <!-- Replace with your professional email address. -->
+                    <p class="email-link">Professional email: <a href="mailto:YOUR-EMAIL-ADDRESS">YOUR-EMAIL-ADDRESS</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Damon Strother. Personal Software Development Portfolio.</p>
+            <a href="#home">Back to Top ↑</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- Damon Strother, 10/20/2026 -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Welcome!S</title>
+
+  <link rel="stylesheet" href="css/styles09.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <p>There is no escaping.</p>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Video Section -->
+    <section class="video-container">
+
+      <button type="button" id="rickrollButton">
+        PRESS ME
+      </button>
+
+      <video id="rickrollVideo" controls playsinline preload="metadata">
+        <source src="media/extend_video.mp4" type="video/mp4">
+      </video>
+
+      <p class="video-caption">
+        Here for a good time not a long time
+      </p>
+
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+      const button = document.getElementById("rickrollButton");
+      const video = document.getElementById("rickrollVideo");
+
+      button.addEventListener("click", function () {
+        video.muted = false;
+        video.currentTime = 0;
+
+        video.play().then(function () {
+          button.textContent = "YOU'VE BEEN RICKROLLED!";
+        }).catch(function (error) {
+          console.log(error);
+        });
+      });
+    </script>
+
+    <p>
+      You thought you were getting something else?
+      Think again.
+    </p>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 S.</p>
+  </footer>
+
+</body>
+
+</html>

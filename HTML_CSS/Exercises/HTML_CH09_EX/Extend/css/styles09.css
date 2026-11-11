@@ -1,0 +1,132 @@
+/*
+    Damon Strother
+    File Name: styles09.css
+    Date: 10/20/2026
+*/
+
+/* CSS Reset */
+body,
+header,
+main,
+footer,
+h1,
+h2,
+p,
+section,
+video,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Body Styles */
+body {
+  background: linear-gradient(135deg, #100020, #250044, #090014);
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+  background-color: #16002b;
+  padding: 40px;
+  text-align: center;
+  border-bottom: 3px solid #ff00cc;
+}
+
+header p {
+  color: #00eaff;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 0 0 12px #00eaff;
+}
+
+/* Main Content */
+main {
+  width: 90%;
+  margin: 40px auto;
+}
+
+/* Video Container */
+.video-container {
+  background-color: #1d0033;
+  border: 2px solid #ff00cc;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 0 20px #ff00cc;
+}
+
+/* Button Styles */
+#rickrollButton {
+  background-color: #ff00cc;
+  color: #ffffff;
+  border: 2px solid #00eaff;
+  border-radius: 10px;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px #ff00cc;
+}
+
+#rickrollButton:hover {
+  background-color: #00eaff;
+  color: #16002b;
+  box-shadow: 0 0 20px #00eaff;
+  transform: scale(1.05);
+}
+
+/* Video Styles */
+video {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  border-radius: 8px;
+  background-color: #000000;
+  margin: 0 auto;
+}
+
+/* Video Caption */
+.video-caption {
+  color: #00eaff;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 20px;
+  text-shadow: 0 0 8px #00eaff;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 480px) {
+
+  header {
+    padding: 25px 10px;
+  }
+
+  header p {
+    font-size: 1.4em;
+  }
+
+  main {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .video-container {
+    padding: 12px;
+  }
+
+  #rickrollButton {
+    font-size: 1em;
+    padding: 12px 22px;
+  }
+
+  .video-caption {
+    font-size: 1em;
+  }
+}

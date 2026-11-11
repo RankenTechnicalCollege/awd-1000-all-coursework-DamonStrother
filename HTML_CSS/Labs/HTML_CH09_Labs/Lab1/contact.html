@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="container">
+    <!-- Mobile Navigation -->
+    <nav class="mobile" aria-label="Mobile navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="lessons.html">Lessons</a></li>
+        <li><a href="instructors.html">Instructors</a></li>
+        <li><a href="rentals.html">Rentals</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Tablet, Desktop, and Print Header -->
+    <header class="tablet-desktop">
+      <h1>&#9836; Strike A Chord &#9836;</h1>
+    </header>
+
+    <!-- Tablet and Desktop Navigation -->
+    <nav class="tablet-desktop" aria-label="Primary navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="lessons.html">Lessons</a></li>
+        <li><a href="instructors.html">Instructors</a></li>
+        <li><a href="rentals.html">Rentals</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Contact Information -->
+      <div id="contact">
+        <h2>Contact Us</h2>
+
+        <p>We are here to help you learn and enjoy music!</p>
+
+        <p class="mobile">
+          Call us today:
+          <a href="tel:8145559228" class="tel-link">(814)&nbsp;555&#8209;9228</a>
+        </p>
+
+        <p class="tablet-desktop">Call us today at (814) 555&#8209;9228.</p>
+
+        <p>
+          Email us:
+          <a href="mailto:lessons@strikeachord.net"> lessons@strikeachord.net </a>
+        </p>
+      </div>
+
+      <!-- Google Map -->
+      <div class="map">
+        <iframe title="Strike A Chord location map"
+          src="https://maps.google.com/maps?q=St.%20Louis%2C%20Missouri&t=&z=13&ie=UTF8&iwloc=&output=embed" width="600"
+          height="450" loading="lazy" allowfullscreen>
+        </iframe>
+      </div>
+
+      <!-- Contact Form -->
+      <div id="form">
+        <h2>Complete the form below and one of our staff members will contact you.</h2>
+
+        <!-- Form begins -->
+        <form class="form-grid" action="#" method="post">
+          <!-- Customer Information -->
+          <fieldset>
+            <legend>Customer Information</legend>
+
+            <label for="fName">First Name:</label>
+            <input type="text" id="fName" name="fName" required>
+
+            <label for="lName">Last Name:</label>
+            <input type="text" id="lName" name="lName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+          </fieldset>
+
+          <!-- Musical Interest -->
+          <fieldset>
+            <legend>Musical Interest</legend>
+
+            <p>I am interested in:</p>
+
+            <label>
+              <input type="checkbox" id="guitar" name="guitar-interest" value="Guitar Lessons">
+              Guitar Lessons
+            </label>
+
+            <label>
+              <input type="checkbox" id="piano" name="piano-interest" value="Piano Lessons">
+              Piano Lessons
+            </label>
+
+            <label>
+              <input type="checkbox" id="violin" name="violin-interest" value="Violin Lessons">
+              Violin Lessons
+            </label>
+
+            <label>
+              <input type="checkbox" id="rental" name="rental-interest" value="Rental Equipment">
+              Rental Equipment
+            </label>
+          </fieldset>
+
+          <!-- Submit Button -->
+          <button type="submit" id="submit" class="btn">Submit</button>
+        </form>
+        <!-- Form ends -->
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; Copyright 2026. All Rights Reserved.</p>
+      <p>
+        <a href="mailto:lessons@strikeachord.net"> lessons@strikeachord.net </a>
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>

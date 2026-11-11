@@ -4,23 +4,55 @@
     File Name: styles.css
 */
 
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto:wght@400;700&display=swap');
+
+
 /* CSS Reset */
-body, header, nav, main, footer, h1, div, img, ul,
-figure, figcaption, aside {
+
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1,
+h2,
+h3,
+p,
+ul,
+div,
+figure,
+figcaption,
+aside,
+article,
+section,
+fieldset,
+form,
+label,
+input,
+table,
+caption,
+th,
+td,
+iframe {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
+
 /* Apply border-box sizing */
+
 * {
     box-sizing: border-box;
 }
 
+
 /* Style rules for body and images */
+
 body {
     background-color: #e5e0fa;
-    font-family: Verdana, Arial, sans-serif;
     color: #373684;
 }
 
@@ -30,25 +62,41 @@ img {
     display: block;
 }
 
+
 /* Style rule for container */
+
 #container {
     width: 100%;
     margin: 0 auto;
 }
 
-/* Style rules for header */
+
+/* Style rules for mobile viewport */
+
+/* Hide tab-desk class */
+
+.tab-desk,
+.tablet-desktop {
+    display: none;
+}
+
+
+/* Style rules for header content */
+
 header {
     text-align: center;
+    font-size: 1.5em;
+    color: #373684;
     padding: 1%;
 }
 
 header h1 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.5em;
-    font-style: italic;
+    font-family: "DM Serif Display", serif;
 }
 
-/* Style rules for navigation */
+
+/* Style rules for navigation area */
+
 nav {
     background-color: #373684;
 }
@@ -60,44 +108,66 @@ nav ul {
 
 nav li {
     display: block;
-    border-top: 1px solid #e5e0fa;
+    font-size: 2em;
+    border-top: 1px solid #e5e9fc;
 }
 
 nav li a {
     display: block;
-    padding: 0.5em;
-    color: #ffffff;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em;
     text-decoration: none;
-    font-size: 0.85em;
 }
 
+
 /* Style rules for main content */
+
 main {
     padding: 2%;
+    background-color: #e5e9fc;
+    overflow: auto;
+    font-family: "Roboto", sans-serif;
 }
+
+main p {
+    font-size: 1.25em;
+}
+
+main h3 {
+    font-size: 1.25em;
+}
+
+
+/* Style rules for gallery grid */
 
 .grid {
     display: block;
 }
 
+
 /* Style rules for introduction */
+
 aside {
     text-align: center;
     padding: 2%;
     font-size: 1.2em;
     font-weight: bold;
+    color: #373684;
     text-shadow: 3px 3px 10px #8280cb;
 }
 
-/* Style rules for instructor figures */
+
+/* Style rules for figures */
+
 figure {
     position: relative;
     width: 80%;
     max-width: 275px;
     margin: 2% auto;
     border: 5px solid #373684;
-    background-color: #ffffff;
-    box-shadow: 3px 3px 8px #888888;
+    background-color: #fff;
+    box-shadow: 3px 3px 8px #888;
     overflow: hidden;
 }
 
@@ -106,7 +176,9 @@ figure img {
     height: auto;
 }
 
+
 /* Style rules for figure captions */
+
 figcaption {
     position: absolute;
     bottom: 0;
@@ -114,39 +186,321 @@ figcaption {
     width: 100%;
     padding: 5% 2%;
     background-color: rgba(55, 54, 132, 0.75);
-    color: #ffffff;
+    color: #fff;
     text-align: center;
+    font-family: Verdana, Arial, sans-serif;
     font-size: 1em;
     font-weight: bold;
 }
 
-/* Style rules for footer */
-footer {
-    text-align: center;
-    font-size: 0.75em;
-    padding: 2%;
-    clear: both;
+
+/* Style rules for action class */
+
+.action {
+    font-size: 1.25em;
+    color: #373684;
+    font-weight: bold;
 }
 
-footer a {
-    color: #373684;
+
+/* Style rules for piano, guitar, and violin */
+
+#piano,
+#guitar,
+#violin {
+    margin: 0 2%;
+    padding: 2%;
+}
+
+
+/* Style rules for info section */
+
+#info {
+    clear: left;
+    background-color: #c0caf7;
+    padding: 1% 2%;
+}
+
+#info ul {
+    margin-left: 10%;
+}
+
+
+/* Style rules for lesson grid */
+
+.lesson-grid {
+    display: block;
+    padding: 2%;
+}
+
+.lesson-grid img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    margin-bottom: 3%;
+}
+
+.lesson-grid h3 {
+    margin-bottom: 5%;
+}
+
+.lesson-grid p {
+    margin-bottom: 5%;
+}
+
+.lesson-grid h4 {
+    margin-bottom: 4%;
+}
+
+.lesson-grid audio {
+    width: 100%;
+}
+
+
+/* Style rules for round class */
+
+.round {
+    border-radius: 8px;
+}
+
+
+/* Style rules for contact section */
+
+#contact,
+#rental h2 {
+    text-align: center;
+    padding: 1%;
+}
+
+#contact a {
+    color: #4645a8;
     text-decoration: none;
 }
 
-/* Tablet Viewport */
-@media screen and (min-width: 481px) {
+.tel-link {
+    background-color: #373684;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
 
-    /* Tablet navigation */
+.tel-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
+#contact .email-link {
+    color: #4645a8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Style rules for map */
+
+.map {
+    display: block;
+    width: 95%;
+    height: 250px;
+    margin: 0 auto 2%;
+    border: 5px solid #373684;
+}
+
+
+/* Style rules for rental table */
+
+table {
+    width: 100%;
+    margin: 0 auto;
+    border: 3px solid #373684;
+    border-collapse: collapse;
+    box-shadow: 5px 5px 8px #888;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1%;
+}
+
+th,
+td {
+    border: 1px solid #373684;
+    padding: 2%;
+    text-align: center;
+}
+
+th {
+    background-color: #373684;
+    color: #fff;
+    font-size: 1.15em;
+}
+
+td:first-child {
+    text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #b7b7e1;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+
+/* Style rules for form elements */
+
+#form {
+    clear: both;
+    width: 100%;
+    margin: 2% auto;
+    padding: 2%;
+    background-color: #e5e9fc;
+}
+
+#form h2 {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.3;
+    margin-bottom: 3%;
+}
+
+#form form {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+fieldset,
+input {
+    margin-bottom: 2%;
+}
+
+#form fieldset {
+    display: block;
+    min-width: 0;
+    width: 100%;
+    padding: 3%;
+    border: 1px solid #999;
+}
+
+#form fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+    padding: 0 2%;
+}
+
+#form label {
+    display: block;
+    padding-top: 3%;
+}
+
+#form input[type="text"],
+#form input[type="email"],
+#form input[type="tel"] {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    padding: 5px;
+    margin-top: 1%;
+    border: 1px solid #999;
+    background-color: #fff;
+}
+
+#form fieldset p {
+    margin: 3% 0;
+}
+
+#form input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 2%;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+#form label:has(input[type="checkbox"]) {
+    padding-top: 3%;
+}
+
+#form form #submit {
+    margin: 0 auto;
+    display: block;
+    padding: 3%;
+    background-color: #b7b7e1;
+    font-size: 1em;
+    border: 1px solid #999;
+    cursor: pointer;
+}
+
+
+/* Style rules for footer */
+
+footer {
+    clear: both;
+    text-align: center;
+    font-size: 0.65em;
+    padding: 2%;
+}
+
+footer a {
+    color: #4645a8;
+    text-decoration: none;
+}
+
+
+/* Media query for tablet viewport */
+
+@media screen and (min-width: 550px),
+print {
+
+    /* Tablet Viewport: Show tab-desk class, hide mobile class */
+
+    .tab-desk,
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile,
+    .tel-link {
+        display: none;
+    }
+
+    span.tab-desk {
+        display: inline;
+    }
+
+
+    /* Tablet Viewport: Navigation area */
+
     nav li {
-        display: inline-block;
         border-top: none;
+        border-right: 1px solid #e5e9fc;
+        display: inline-block;
+        font-size: 1.5em;
+        padding: 0.25em 0.5em;
     }
 
-    nav li a {
-        padding: 0.5em 0.7em;
+    nav li:last-child {
+        border-right: 0;
     }
 
-    /* Tablet grid layout */
+
+    /* Tablet Viewport: Map */
+
+    .map {
+        width: 500px;
+        height: 450px;
+    }
+
+
+    /* Tablet Viewport: Gallery grid */
+
     .grid {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -154,14 +508,12 @@ footer a {
         align-items: start;
     }
 
-    /* Introduction spans both columns */
     aside {
         grid-column: 1 / span 2;
         font-size: 1em;
         padding: 2%;
     }
 
-    /* Instructor figures */
     figure {
         width: 80%;
         margin: 2% auto;
@@ -171,50 +523,110 @@ footer a {
         font-size: 0.8em;
     }
 
+
+    /* Tablet Viewport: Lesson grid */
+
+    .lesson-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2%;
+    }
+
+
+    /* Tablet Viewport: Form elements */
+
+    #form form {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #form {
+        width: 100%;
+    }
+
+    #form fieldset {
+        padding: 2%;
+    }
+
 }
 
-/* Desktop Viewport */
-@media screen and (min-width: 769px) {
 
-    /* Desktop container */
+/* Media query for desktop viewport */
+
+@media screen and (min-width: 769px),
+print {
+
+    /* Desktop Viewport: Container */
+
     #container {
         width: 90%;
         max-width: 1200px;
         margin: 0 auto;
-        background-color: #e5e0fa;
-        box-shadow: 3px 3px 10px #888888;
+        background-color: #e5e9fc;
+        box-shadow: 3px 3px 10px #888;
     }
 
-    /* Desktop navigation */
-    nav {
-        text-align: center;
+
+    /* Desktop Viewport: Header */
+
+    header {
+        padding: 2%;
     }
+
+
+    /* Desktop Viewport: Navigation area */
 
     nav li a {
-        padding: 0.6em 1em;
-        font-size: 0.75em;
+        padding: 0.5em 1.5em;
     }
 
     nav li a:hover,
     nav li a:focus {
-        background-color: #e5e0fa;
         color: #373684;
+        background-color: #e5e9fc;
     }
 
-    /* Four-column desktop grid */
+
+    /* Desktop Viewport: Main content */
+
+    #info ul {
+        margin-left: 5%;
+    }
+
+    main h3 {
+        font-size: 1.5em;
+    }
+
+
+    /* Desktop Viewport: Lesson grid */
+
+    .lesson-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 2%;
+    }
+
+    #piano,
+    #guitar,
+    #violin {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+
+
+    /* Desktop Viewport: Gallery grid */
+
     .grid {
         grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 2%;
     }
 
-    /* Introduction spans all four columns */
     aside {
         grid-column: 1 / span 4;
         font-size: 0.85em;
         padding: 2%;
     }
 
-    /* Instructor cards */
     figure {
         width: 100%;
         max-width: none;
@@ -224,6 +636,72 @@ footer a {
     figcaption {
         font-size: 0.65em;
         padding: 5% 1%;
+    }
+
+
+    /* Desktop Viewport: Rental table */
+
+    table {
+        width: 70%;
+    }
+
+
+    /* Desktop Viewport: Form elements */
+
+    #form {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #form h2 {
+        font-size: 1em;
+        margin-bottom: 2%;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
+
+    .form-grid fieldset {
+        width: 100%;
+        margin-bottom: 0;
+        padding: 3%;
+    }
+
+    .form-grid input[type="text"],
+    .form-grid input[type="email"],
+    .form-grid input[type="tel"] {
+        width: 100%;
+    }
+
+    .btn {
+        grid-column: 1 / span 2;
+    }
+
+}
+
+
+/* Large Desktop Viewport */
+
+@media screen and (min-width: 1441px) {
+
+    #container {
+        width: 1440px;
+        margin: 0 auto;
+    }
+
+}
+
+
+/* Media query for print */
+
+@media print {
+
+    body {
+        background-color: #fff;
+        color: #000;
     }
 
 }

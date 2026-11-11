@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+    <rect width="900" height="520" fill="#17181d"/>
+    <rect x="35" y="35" width="830" height="450" rx="14" fill="#22232a" stroke="#555660" stroke-width="2"/>
+    <rect x="35" y="35" width="830" height="55" rx="14" fill="#101114"/>
+    <circle cx="68" cy="62" r="8" fill="#a8a8b2"/>
+    <circle cx="96" cy="62" r="8" fill="#777984"/>
+    <circle cx="124" cy="62" r="8" fill="#555660"/>
+    <rect x="175" y="52" width="240" height="18" rx="8" fill="#3b3c45"/>
+    <text x="85" y="165" fill="#d7b78c" font-family="Arial, sans-serif" font-size="25" letter-spacing="5">RESTAURANT WEBSITE</text>
+    <text x="85" y="235" fill="#f0f0f3" font-family="Arial, sans-serif" font-size="54" font-weight="bold">Moonlight Kitchen</text>
+    <text x="85" y="290" fill="#b7b7c0" font-family="Arial, sans-serif" font-size="24">A clean restaurant landing page</text>
+    <rect x="85" y="345" width="180" height="48" rx="4" fill="#d7b78c"/>
+    <text x="115" y="376" fill="#17181d" font-family="Arial, sans-serif" font-size="18" font-weight="bold">EXPLORE</text>
+    <rect x="625" y="145" width="165" height="210" rx="8" fill="#30313a" stroke="#d7b78c" stroke-width="3"/>
+    <path d="M650 310l45-70 35 40 25-55 18 85z" fill="#d7b78c" opacity=".8"/>
+    <circle cx="735" cy="195" r="22" fill="#c8c8ce" opacity=".8"/>
+</svg>
